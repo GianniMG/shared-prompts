@@ -1,0 +1,108 @@
+id: hms-starter-pack
+name: HMS Starter Pack
+description: Essenzielle Prompts und Agents für den Einstieg in die HMS Copilot Prompt Library. Fokus auf Data Analytics, ML und GxP Compliance.
+tags: [data-analytics, machine-learning, compliance, cloud, starter]
+items:
+  - path: prompts/data-analytics/sql-optimization.prompt.md
+    kind: prompt
+    usage: |
+      recommended
+
+      Dieser Prompt hilft bei der Optimierung von SQL-Queries für Cloud Data Warehouses (Snowflake, Azure Synapse, AWS Redshift).
+
+      Ideal für:
+      - Performance-Probleme in Data Warehouses
+      - Cost Optimization durch Query-Tuning
+      - Cloud-Migration von On-Premise Datenbanken
+
+      Beispiel:
+      ```markdown
+      Optimiere diese SQL-Query für Snowflake:
+      [Ihre Query hier einfügen]
+      ```
+
+  - path: prompts/ml-ai/predictive-maintenance.prompt.md
+    kind: prompt
+    usage: |
+      recommended
+
+      Entwickelt End-to-End ML-Lösungen für Predictive Maintenance in Manufacturing.
+
+      Ideal für:
+      - IoT Sensor Data Analytics
+      - Remaining Useful Life (RUL) Prediction
+      - Anomaly Detection in Produktionsanlagen
+
+      Beispiel:
+      ```markdown
+      Erstelle ein Feature Engineering Pipeline für Vibrationssensor-Daten zur Vorhersage von Maschinenausfällen.
+      ```
+
+  - path: prompts/compliance/gxp-validation-documentation.prompt.md
+    kind: prompt
+    usage: |
+      recommended
+
+      Generiert GxP-konforme Validierungsdokumentation für Software in regulierten Umgebungen.
+
+      Ideal für:
+      - CSV (Computer System Validation)
+      - IQ/OQ/PQ Protokolle
+      - 21 CFR Part 11 Compliance
+
+      Beispiel:
+      ```markdown
+      Erstelle einen Validation Plan für ein Python-basiertes Data Analytics System zur klinischen Datenauswertung (GAMP 5 Category 5).
+      ```
+
+  - path: prompts/legacy-migration/sas-to-python.prompt.md
+    kind: prompt
+    usage: |
+      recommended
+
+      Unterstützt bei der Migration von Legacy-SAS-Code zu modernen Python-Lösungen.
+
+      Ideal für:
+      - SAS PROC zu Python Pandas Konvertierung
+      - SAS Macro Migration
+      - Output-Validierung (SAS vs. Python)
+
+      Beispiel:
+      ```markdown
+      Konvertiere diesen SAS PROC SQL zu Pandas Python:
+      [SAS Code hier einfügen]
+      ```
+
+  - path: agents/data-engineer.agent.md
+    kind: agent
+    usage: |
+      recommended
+
+      Data Engineering Expert für Cloud-basierte Analytics-Architekturen.
+
+      Dieser Agent unterstützt bei:
+      - Medallion Architecture Design (Bronze/Silver/Gold)
+      - ETL/ELT Pipeline Entwicklung
+      - Data Quality Implementation mit Great Expectations
+      - Azure Data Factory / Databricks
+
+      Aktivieren Sie diesen Agent für komplexe Data Engineering Aufgaben.
+
+  - path: agents/gxp-compliance-expert.agent.md
+    kind: agent
+    usage: |
+      optional
+
+      GxP Compliance & Validation Expert für regulierte Software-Entwicklung.
+
+      Dieser Agent ist essentiell für Life Sciences Projekte:
+      - Validation Master Plans
+      - Risk Assessments (FMEA, ICH Q9)
+      - Audit Trail Requirements
+      - Change Control Procedures
+
+      Aktivieren Sie diesen Agent bei allen GxP-relevanten Projekten.
+
+display:
+  ordering: manual
+  show_badge: true
